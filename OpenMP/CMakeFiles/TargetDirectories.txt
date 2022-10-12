@@ -1,0 +1,3 @@
+/home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/OpenMP/CMakeFiles/test.dir
+/home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/OpenMP/CMakeFiles/edit_cache.dir
+/home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/OpenMP/CMakeFiles/rebuild_cache.dir

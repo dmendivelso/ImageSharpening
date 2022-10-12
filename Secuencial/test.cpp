@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <iostream>
 #include <opencv2/opencv.hpp>
+#include <sys/time.h>
 using namespace cv;
 int main(int argc, char** argv )
 {
+    struct timeval tval_before, tval_after, tval_result;
     Mat image;
     Mat imageChannel[3];
     Mat imageBlur[3];
@@ -21,6 +23,7 @@ int main(int argc, char** argv )
         printf("usage: DisplayImage.out <Image_Path>\n");
         return -1;
     }
+    gettimeofday(&tval_before, NULL);
 
     image = imread(argv[1], 1);
     frameSize = image.size();
@@ -81,6 +84,11 @@ int main(int argc, char** argv )
             imageSharpen[2].at<uchar>(i,j) = imageChannel[2].at<uchar>(i,j) + (k * imageHighPass[2].at<uchar>(i,j)); 
         }
     }
+
+    gettimeofday(&tval_after, NULL);
+    timersub(&tval_after, &tval_before, &tval_result);
+    printf("------------------------------------------------------------------------------\n");
+    printf("Tiempo de ejecución: %ld.%06ld s \n", (long int)tval_result.tv_sec, (long int)tval_result.tv_usec);
 
     mChannels = {imageSharpen[0],imageSharpen[1],imageSharpen[2]};
 

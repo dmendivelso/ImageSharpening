@@ -1,5 +1,5 @@
 CMakeFiles/test.dir/test.cpp.o: \
- /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial/test.cpp \
+ /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/OpenMP/test.cpp \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -353,4 +353,5 @@ CMakeFiles/test.dir/test.cpp.o: \
  /usr/local/include/opencv4/opencv2/video.hpp \
  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
  /usr/include/x86_64-linux-gnu/sys/time.h
