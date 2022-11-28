@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial
+CMAKE_SOURCE_DIR = /home/mendivelso/Escritorio/ImageSharpening/Secuencial
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial
+CMAKE_BINARY_DIR = /home/mendivelso/Escritorio/ImageSharpening/Secuencial
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/test.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/test.cpp.o: test.cpp
 CMakeFiles/test.dir/test.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/test.cpp.o -MF CMakeFiles/test.dir/test.cpp.o.d -o CMakeFiles/test.dir/test.cpp.o -c /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mendivelso/Escritorio/ImageSharpening/Secuencial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/test.cpp.o -MF CMakeFiles/test.dir/test.cpp.o.d -o CMakeFiles/test.dir/test.cpp.o -c /home/mendivelso/Escritorio/ImageSharpening/Secuencial/test.cpp
 
 CMakeFiles/test.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial/test.cpp > CMakeFiles/test.dir/test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mendivelso/Escritorio/ImageSharpening/Secuencial/test.cpp > CMakeFiles/test.dir/test.cpp.i
 
 CMakeFiles/test.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial/test.cpp -o CMakeFiles/test.dir/test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mendivelso/Escritorio/ImageSharpening/Secuencial/test.cpp -o CMakeFiles/test.dir/test.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
@@ -92,23 +92,62 @@ test_EXTERNAL_OBJECTS =
 
 test: CMakeFiles/test.dir/test.cpp.o
 test: CMakeFiles/test.dir/build.make
-test: /usr/local/lib/libopencv_gapi.so.4.6.0
-test: /usr/local/lib/libopencv_highgui.so.4.6.0
-test: /usr/local/lib/libopencv_ml.so.4.6.0
-test: /usr/local/lib/libopencv_objdetect.so.4.6.0
-test: /usr/local/lib/libopencv_photo.so.4.6.0
-test: /usr/local/lib/libopencv_stitching.so.4.6.0
-test: /usr/local/lib/libopencv_video.so.4.6.0
-test: /usr/local/lib/libopencv_videoio.so.4.6.0
-test: /usr/local/lib/libopencv_imgcodecs.so.4.6.0
-test: /usr/local/lib/libopencv_dnn.so.4.6.0
-test: /usr/local/lib/libopencv_calib3d.so.4.6.0
-test: /usr/local/lib/libopencv_features2d.so.4.6.0
-test: /usr/local/lib/libopencv_flann.so.4.6.0
-test: /usr/local/lib/libopencv_imgproc.so.4.6.0
-test: /usr/local/lib/libopencv_core.so.4.6.0
+test: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
+test: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mendivelso/Escritorio/ImageSharpening/Secuencial/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -120,6 +159,6 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 CMakeFiles/test.dir/depend:
-	cd /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial /home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mendivelso/Escritorio/ImageSharpening/Secuencial && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mendivelso/Escritorio/ImageSharpening/Secuencial /home/mendivelso/Escritorio/ImageSharpening/Secuencial /home/mendivelso/Escritorio/ImageSharpening/Secuencial /home/mendivelso/Escritorio/ImageSharpening/Secuencial /home/mendivelso/Escritorio/ImageSharpening/Secuencial/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test.dir/depend
 

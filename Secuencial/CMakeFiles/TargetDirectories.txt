@@ -1,3 +1,3 @@
-/home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial/CMakeFiles/test.dir
-/home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial/CMakeFiles/edit_cache.dir
-/home/soporteit/Desktop/ProyectoDistribuidos/ImageSharpening/Secuencial/CMakeFiles/rebuild_cache.dir
+/home/mendivelso/Escritorio/ImageSharpening/Secuencial/CMakeFiles/test.dir
+/home/mendivelso/Escritorio/ImageSharpening/Secuencial/CMakeFiles/edit_cache.dir
+/home/mendivelso/Escritorio/ImageSharpening/Secuencial/CMakeFiles/rebuild_cache.dir

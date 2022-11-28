@@ -1,0 +1,3 @@
+/home/mendivelso/Escritorio/ImageSharpening/MPI/CMakeFiles/Sharp.dir
+/home/mendivelso/Escritorio/ImageSharpening/MPI/CMakeFiles/edit_cache.dir
+/home/mendivelso/Escritorio/ImageSharpening/MPI/CMakeFiles/rebuild_cache.dir

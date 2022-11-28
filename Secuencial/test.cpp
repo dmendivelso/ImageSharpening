@@ -15,7 +15,7 @@ int main(int argc, char** argv )
     Mat saveImage;
     Size frameSize;
 
-    int filterBlur[9] = {1,2,1,2,4,2,1,2,1}; 
+    int filterBlur[25] = {1,4,7,4,1,4,16,26,16,4,7,26,41,26,7,4,16,26,16,4,1,4,7,4,1};
     
     std::vector<Mat> mChannels;
 
@@ -37,7 +37,6 @@ int main(int argc, char** argv )
     split(image, imageBlur);
     split(image, imageHighPass);
     split(image, imageSharpen);
-    
 
     for(int i = 0; i < frameSize.height; i++){
         for(int j = 0; j < frameSize.width; j++){
@@ -53,17 +52,17 @@ int main(int argc, char** argv )
                 int blueBlur = 0;
                 int greenBlur = 0;
                 int redBlur = 0;
-                for(int k = -1; k <= 1 ; k++){
-                    for(int l = -1; l <= 1; l++){
+                for(int k = -2; k <= 2 ; k++){
+                    for(int l = -2; l <= 2; l++){
                         blueBlur += imageChannel[0].at<uchar>(i+k,j+l) * filterBlur[positionFilter];
                         greenBlur += imageChannel[1].at<uchar>(i+k,j+l) * filterBlur[positionFilter];
                         redBlur += imageChannel[2].at<uchar>(i+k,j+l) * filterBlur[positionFilter];
                         positionFilter++;
                     }
                 }
-                imageBlur[0].at<uchar>(i,j) = (int) blueBlur / 16;
-                imageBlur[1].at<uchar>(i,j) = (int) greenBlur / 16;
-                imageBlur[2].at<uchar>(i,j) = (int) redBlur / 16;
+                imageBlur[0].at<uchar>(i,j) = (int) blueBlur / 273;
+                imageBlur[1].at<uchar>(i,j) = (int) greenBlur / 273;
+                imageBlur[2].at<uchar>(i,j) = (int) redBlur / 273;
 
             }
         }
@@ -90,7 +89,7 @@ int main(int argc, char** argv )
     printf("------------------------------------------------------------------------------\n");
     printf("Tiempo de ejecución: %ld.%06ld s \n", (long int)tval_result.tv_sec, (long int)tval_result.tv_usec);
 
-    mChannels = {imageSharpen[0],imageSharpen[1],imageSharpen[2]};
+    mChannels = {imageBlur[0],imageBlur[1],imageBlur[2]};
 
     merge(mChannels, saveImage);
 
